@@ -8,7 +8,11 @@
     margin: 0;
     padding: 0px;
     color: white;
+    box-sizing: border-box;
     font-size: 0.9rem;
+}
+body{
+    min-width: 100%;    
 }
 .email-logo .email{
     margin-left: 10vw;
@@ -55,9 +59,17 @@ margin-right: 50px;
 font-family: 'Audiowide';
 }
 .banner{
-    background-color: #9A4BFF;
+    width: 100%;
+    background-color: #9A4BFF; 
+    
+}
+.banner-wrapper{
+    max-width: 1600px;
+    margin: 0px auto;
     display: flex;
     align-items: center;
+    
+
 }
 .bannertext{
     margin-left: 100px;
@@ -202,6 +214,7 @@ font-family: 'Audiowide';
     width: 200px;
     justify-items: center;
     align-items: center;
+    padding: 20px 0px;
 }
 .boxes{
     display: flex;
@@ -209,6 +222,12 @@ font-family: 'Audiowide';
     justify-content: space-between;
     margin-left: 150px;
     margin-right: 150px;
+    max-width: 1600px;
+    width: 100%;
+    margin: 0px auto;
+}
+.boxes a{
+    text-decoration: none;
 }
 .boxes i{
     font-size: 120px;
@@ -276,23 +295,32 @@ font-family: 'Audiowide';
 
 
 .headingpopular{
-    margin-top: 25px;
-    position: relative;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 25px;
+    position: relative; */
 }
-.most-popular{
+.headingpopular h2{
     color: black;
     font-size: 3rem;
     font-weight: 600;
     text-align: center;
 }
 .underline{
-    color: rgb(202, 78, 202);
-    font-size: 5rem;
-    font-weight: 900;
-    text-align: center;
-    position: absolute;
+   background-color: rgb(202, 78, 202);
+   margin: 10px 0px 0px 0px;
+   height: 5px;
+   width: 12%;
+    /* font-size: 5rem; */
+    /* font-weight: 900; */
+    /* text-align: center; */
+    /* position: absolute;
     top: 0px;
-    left: 510px;
+    left: 650px; */
 }
 
 /* For Tablets and Medium Screens (width <= 768px) */
@@ -349,6 +377,12 @@ font-family: 'Audiowide';
     background-color: gray;
 
 }
+.popularitems
+{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0px auto;
+}
 .popularitems .firefox,details{
     border: 1px solid rgb(203, 194, 194);
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
@@ -362,6 +396,7 @@ font-family: 'Audiowide';
     padding: 10px;
     height: 200px;
     
+
 }
 .firefox .detail{
     margin-left: 15px;
@@ -686,6 +721,7 @@ font-family: 'Audiowide';
     align-items: center;
     justify-content: center;
     /* color: white; */
+    
 }
 .spacer{
     aspect-ratio: 960/300;
@@ -843,15 +879,15 @@ font-family: 'Audiowide';
     font-weight: 600;
     text-align: center;
 }
-.underline{
+/* .underline{
     color: rgb(202, 78, 202);
     font-size: 5rem;
     font-weight: 900;
     text-align: center;
     position: absolute;
     top: 0px;
-    left: 510px;
-}
+    left: 650px;
+} */
 .let-font i{
     font-size: 8rem;
     margin-top: 45px;
@@ -939,11 +975,13 @@ font-family: 'Audiowide';
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 15vw;
-    margin-right: 15vw;
+    max-width: 1600px;
+    margin: 0px auto;
+    padding: 0px 64px 40px 64px;
+    
 }
 .contactsec{
-
+    width: 100%;
     background-color: #9A4BFF;
 }
 .legal{
