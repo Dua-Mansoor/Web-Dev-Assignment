@@ -212,6 +212,8 @@ font-family: 'Audiowide';
     border-radius: 20px;
     height: 200px;
     width: 200px;
+    display: flex;
+    flex-direction: column;
     justify-items: center;
     align-items: center;
     padding: 20px 0px;
@@ -219,7 +221,7 @@ font-family: 'Audiowide';
 .boxes{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-left: 150px;
     margin-right: 150px;
     max-width: 1600px;
