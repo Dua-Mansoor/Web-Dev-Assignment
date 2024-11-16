@@ -1,0 +1,992 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    font-family: 'Open Sans';
+    margin: 0;
+    padding: 0px;
+    color: white;
+    font-size: 0.9rem;
+}
+.email-logo .email{
+    margin-left: 10vw;
+}
+.email-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(213, 213, 104);
+    padding: 0.2vw;
+}
+.app-logos{
+    margin-right: 10vw;
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.navbar a{
+text-decoration: none;
+}
+nav, .email-logo{
+    background-color: #9A4BFF;
+}
+.img-search {
+    background-color: rgb(229, 214, 40);
+    padding: 2px 4px;
+    
+}
+.logo span{
+    color: yellow;
+    font-family: 'Audiowide';
+}
+.logo span, .logo{
+    font-size: 3rem;
+    font-weight: 600px;
+}
+.logo{
+margin-right: 50px; 
+font-family: 'Audiowide';
+}
+.banner{
+    background-color: #9A4BFF;
+    display: flex;
+    align-items: center;
+}
+.bannertext{
+    margin-left: 100px;
+}
+.banner .h1{
+    font-size: 4.5rem;
+}
+.banner .h2{
+    font-size: 2rem;
+    font-weight: 100px;
+}
+.banner img{
+    height: 450px;
+    width: 600px;
+}
+.downloadnow{
+    background-color: rgb(108, 54, 232);
+    border: 1px solid white;
+    border-radius: 25px;
+    font-weight: 600;
+    padding: 8px 25px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+/* using haikei app curves are made produce scalable vector g */
+/* 905eff */
+/* b38eff */
+.spacer{
+    aspect-ratio: 960/100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* border-collapse: collapse; */
+}
+.layer1{
+    background-image: url(images/curve1.svg);
+}
+
+/* For Tablets and Medium Screens (width <= 768px) */
+@media (max-width: 768px) {
+    .email-logo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .email-logo .email {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .app-logos {
+        margin-right: 0;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .navbar ul li, .navbar ul .img-search {
+        margin: 10px 0;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+        margin-right: 0;
+    }
+
+    .banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bannertext {
+        margin: 20px 0;
+    }
+
+    .banner .h1 {
+        font-size: 3rem;
+    }
+
+    .banner .h2 {
+        font-size: 1.5rem;
+    }
+
+    .banner img {
+        height: auto;
+        width: 90%;
+    }
+
+    .downloadnow {
+        padding: 10px 20px;
+    }
+}
+
+/* For Mobile Screens (width <= 480px) */
+@media (max-width: 480px) {
+    .navbar ul li, .navbar ul .img-search {
+        font-size: 0.8rem;
+    }
+
+    .navbar a {
+        font-size: 0.8rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .banner .h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner .h2 {
+        font-size: 1.2rem;
+    }
+
+    .downloadnow {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+
+    .spacer {
+        display: none; /* Hide spacer curve for smaller screens */
+    }
+}
+
+
+
+
+
+
+
+
+.box1 , .box2 , .box3 , .box4{
+    border: 1px solid #f1f1f1;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    justify-items: center;
+    align-items: center;
+}
+.boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.boxes i{
+    font-size: 120px;
+}
+.boxes h3{
+    color: black;
+    font-size: 2rem;
+    margin-top: 10px;
+    
+}
+
+/* For Tablets and Medium Screens (width <= 768px) */
+@media (max-width: 768px) {
+    .boxes {
+        flex-wrap: wrap; /* Wrap boxes to the next line if needed */
+        justify-content: center; /* Center-align the boxes */
+        margin-left: 50px; /* Reduce margins */
+        margin-right: 50px;
+    }
+
+    .box1, .box2, .box3, .box4 {
+        width: 150px; /* Reduce box size */
+        height: 150px;
+        margin: 10px; /* Add space between boxes */
+    }
+
+    .boxes i {
+        font-size: 90px; /* Reduce icon size */
+    }
+
+    .boxes h3 {
+        font-size: 1.5rem; /* Adjust text size */
+    }
+}
+
+/* For Mobile Screens (width <= 480px) */
+@media (max-width: 480px) {
+    .boxes {
+        flex-direction: column; /* Stack boxes vertically */
+        align-items: center;
+        margin: 20px; /* Add smaller margins */
+    }
+
+    .box1, .box2, .box3, .box4 {
+        width: 120px; /* Further reduce box size */
+        height: 120px;
+        margin: 10px 0; /* Space between stacked boxes */
+    }
+
+    .boxes i {
+        font-size: 70px; /* Reduce icon size further */
+    }
+
+    .boxes h3 {
+        font-size: 1.2rem; /* Smaller text for mobile */
+    }
+}
+
+
+
+
+
+
+
+
+
+.headingpopular{
+    margin-top: 25px;
+    position: relative;
+}
+.most-popular{
+    color: black;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+.underline{
+    color: rgb(202, 78, 202);
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: 510px;
+}
+
+/* For Tablets and Medium Screens (width <= 768px) */
+@media (max-width: 768px) {
+    .most-popular {
+        font-size: 2.5rem; /* Reduce font size */
+    }
+
+    .underline {
+        font-size: 3rem; /* Adjust size of underline */
+        top: 30px; /* Adjust position to match new layout */
+        left: 20%; /* Center align on smaller screens */
+    }
+}
+
+/* For Mobile Screens (width <= 480px) */
+@media (max-width: 480px) {
+    .most-popular {
+        font-size: 2rem; /* Further reduce font size for mobiles */
+        padding: 0 10px; /* Add padding to prevent text clipping */
+    }
+
+    .underline {
+        font-size: 2rem; /* Smaller underline */
+        top: 25px; /* Adjust position */
+        left: 10%; /* Further adjust centering */
+    }
+}
+
+
+
+
+
+
+
+
+
+.downloadsec .views ,.dwnlds{
+    color: rgb(160, 158, 158);
+}
+.downloadsec .size{
+    color: black;
+}
+.detail h3,p,b{
+    color: black;
+}
+.detail span, .time{
+    color: rgb(160, 158, 158);
+}
+.firefox img{
+    width: 170px;
+    width: 170px;
+    border-radius: 20px;
+    background-color: gray;
+
+}
+.popularitems .firefox,details{
+    border: 1px solid rgb(203, 194, 194);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 40px;
+    padding: 10px;
+    height: 200px;
+    
+}
+.firefox .detail{
+    margin-left: 15px;
+    padding-right: 10px;
+    border-right:  1px solid rgb(171, 177, 171);
+}
+.firefox h3{
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+.downloadsec{
+
+    /* border-left: 1 px solid gray; */
+    text-align: center;
+    padding-right: 5px;
+    padding-left: 10px;
+}
+.downloadsec button{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(32, 209, 32);
+    border: 1px solid gray;
+    border-radius: 20px;
+    /* padding-left: 80px; */
+    font-size: 1rem;
+    width: 130px;
+    padding: 5px 0px;
+}
+.winrar img{
+    width: 170px;
+    width: 170px;
+    border-radius: 20px;
+    background-color: gray;
+
+}
+.winrar .detail{
+    margin-left: 15px;
+    padding-right: 10px;
+    border-right:  1px solid rgb(171, 177, 171);
+}
+.winrar h3{
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+.popularitems .winrar,details{
+    border: 1px solid rgb(203, 194, 194);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 40px;
+    padding: 10px;
+    height: 200px;
+    
+}
+.photoshop img{
+    width: 170px;
+    width: 170px;
+    border-radius: 20px;
+    background-color: gray;
+
+}
+.photoshop .detail{
+    margin-left: 15px;
+    padding-right: 10px;
+    border-right:  1px solid rgb(171, 177, 171);
+}
+.photoshop h3{
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+.popularitems .photoshop,details{
+    border: 1px solid rgb(203, 194, 194);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 40px;
+    padding: 10px;
+    height: 200px;
+    
+}
+.dreamw img{
+    width: 170px;
+    width: 170px;
+    border-radius: 20px;
+    background-color: gray;
+
+}
+.dreamw .detail{
+    margin-left: 15px;
+    padding-right: 10px;
+    border-right:  1px solid rgb(171, 177, 171);
+}
+.dreamw h3{
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+.popularitems .dreamw,details{
+    border: 1px solid rgb(203, 194, 194);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 40px;
+    padding: 10px;
+    height: 200px;
+    
+}
+.whatsapp img{
+    width: 170px;
+    width: 170px;
+    border-radius: 20px;
+    background-color: gray;
+
+}
+.whatsapp .detail{
+    margin-left: 15px;
+    padding-right: 10px;
+    border-right:  1px solid rgb(171, 177, 171);
+}
+.whatsapp h3{
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+.popularitems .whatsapp,details{
+    border: 1px solid rgb(203, 194, 194);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 40px;
+    padding: 10px;
+    height: 200px;
+    
+}
+.filezilla img{
+    width: 170px;
+    width: 170px;
+    border-radius: 20px;
+    background-color: gray;
+
+}
+.filezilla .detail{
+    margin-left: 15px;
+    padding-right: 10px;
+    border-right:  1px solid rgb(171, 177, 171);
+}
+.filezilla h3{
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+.popularitems .filezilla,details{
+    border: 1px solid rgb(203, 194, 194);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 40px;
+    padding: 10px;
+    height: 200px;
+    
+}
+.popularitems{
+    margin-top: 10px;
+}
+
+/* For Tablets and Medium Screens (width <= 768px) */
+@media (max-width: 768px) {
+    .popularitems .firefox,
+    .popularitems .winrar,
+    .popularitems .photoshop,
+    .popularitems .dreamw,
+    .popularitems .whatsapp,
+    .popularitems .filezilla {
+        margin-left: 20px; /* Reduce side margins */
+        margin-right: 20px;
+        flex-wrap: wrap; /* Allow wrapping */
+        height: auto; /* Adjust height dynamically */
+    }
+
+    .popularitems img {
+        width: 140px; /* Reduce image size */
+    }
+
+    .popularitems h3 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+}
+
+/* For Mobile Screens (width <= 480px) */
+@media (max-width: 480px) {
+    .popularitems {
+        margin-top: 0;
+    }
+
+    .popularitems .firefox,
+    .popularitems .winrar,
+    .popularitems .photoshop,
+    .popularitems .dreamw,
+    .popularitems .whatsapp,
+    .popularitems .filezilla {
+        margin: 10px; /* Add space between items */
+        flex-direction: column; /* Stack elements vertically */
+        height: auto;
+        padding: 5px; /* Reduce padding */
+    }
+
+    .popularitems img {
+        width: 100px; /* Further reduce image size */
+    }
+
+    .popularitems h3 {
+        font-size: 1.2rem; /* Smaller headings */
+    }
+
+    .popularitems .detail {
+        margin-left: 0; /* Center-align content */
+        text-align: center;
+        padding: 0;
+        border-right: none; /* Remove borders for mobile */
+    }
+
+    .popularitems .downloadsec {
+        padding: 0; /* Compact download section */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.pageno a{
+    border: 1px solid gray;
+    color: rgb(101, 97, 97);
+    /* width: 5px; */
+    /* height: 5px; */
+    padding: 5px 12px;
+    text-decoration: none;
+    margin: 0 4px;
+    border-radius: 4px;
+    
+}
+.pageno{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    background-color: #f1f1f1;
+    border-top:  1px solid #ddd;
+    margin-top: 20px;
+}
+.pageno a:hover{
+    background-color: #9A4BFF;
+    color: #ddd;
+}
+
+/* For Tablets and Medium Screens (width <= 768px) */
+@media (max-width: 768px) {
+    .pageno a {
+        padding: 4px 10px; /* Reduce padding */
+        font-size: 0.9rem; /* Decrease font size */
+    }
+
+    .pageno {
+        padding: 8px 0; /* Adjust spacing */
+    }
+}
+
+/* For Mobile Screens (width <= 480px) */
+@media (max-width: 480px) {
+    .pageno {
+        flex-wrap: wrap; /* Allow wrapping of links */
+        padding: 5px 0; /* Reduce top and bottom padding */
+    }
+
+    .pageno a {
+        margin: 4px 2px; /* Reduce margins between links */
+        font-size: 0.8rem; /* Further reduce font size */
+        padding: 3px 8px; /* Compact padding for better fit */
+    }
+}
+
+
+
+
+
+
+
+
+.designersec{
+    background-image: url(images/desbgcurve.svg);
+    /* background-color: #804aec; */
+    /* background-image: url(images/desbg.jpg);
+    background-position: center;
+    background-size: cover; */
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: white; */
+}
+.spacer{
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* border-collapse: collapse; */
+}
+.des-container b,p{
+    display: flex;
+    flex-direction: column;
+    /* color: white; */
+    font-size: 1rem;
+    font-weight: 400;
+}
+.des-container b{
+    color: white;
+}
+.des-container p{
+    color: white;
+}
+.arrow-left a, .arrow-right a{
+    color: black;
+    font-size: 1.5rem;
+    border: 2px solid white;
+    border-radius: 50px;
+    width: 40px;
+    text-align: center;
+    padding: 6px;
+    background-color: white;
+}
+
+.des-detail{
+    font-size: 3rem;
+    padding-right: 20px;
+}
+.des-container{
+    margin: 100px;
+    justify-items: center;
+    align-items: center;
+    
+}
+.des-logos .des-bio div,b,i{
+    align-items: center;
+    font-size: 1.6rem;
+    padding-right: 5px;
+    padding-top: 5px;
+    /* padding: 100px; */
+}
+.des-bio{
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+.des-bio b{
+    font-size: 1.5rem;
+}
+.des-img img{
+    border-radius: 100px;
+    height: 200px;
+    width: 200px;
+    margin-top: 25px;
+}
+/* 905eff  */
+ /* b38eff */
+.des-img{
+    background-color: #b38eff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22% 78% 24% 76% / 54% 59% 41% 46% ;
+    height: 250px;
+    width: 250px;
+    margin-left: 40px;
+    padding: 20px;
+
+}
+/* For Tablets and Medium Screens (width <= 768px) */
+@media (max-width: 768px) {
+    .designersec {
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Adjust height */
+        padding: 20px;
+    }
+
+    .des-img, .des-container {
+        margin: 20px 0; /* Add spacing between elements */
+    }
+
+    .des-img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .arrow-left, .arrow-right {
+        display: none; /* Hide arrows on medium screens */
+    }
+
+    .des-detail {
+        font-size: 2rem; /* Reduce font size */
+    }
+
+    .des-bio {
+        font-size: 1.2rem; /* Adjust font size */
+    }
+}
+
+/* For Mobile Screens (width <= 480px) */
+@media (max-width: 480px) {
+    .designersec {
+        padding: 10px;
+    }
+
+    .des-img {
+        height: 150px;
+        width: 150px;
+        margin: 10px 0; /* Further reduce margins */
+    }
+
+    .des-detail {
+        font-size: 1.5rem; /* Reduce text size for details */
+    }
+
+    .des-bio b {
+        font-size: 1.2rem; /* Smaller font for bio */
+    }
+
+    .des-bio {
+        font-size: 1rem;
+    }
+
+    .des-container {
+        margin: 10px 0;
+        text-align: center; /* Center content */
+    }
+
+    .des-logos i {
+        font-size: 1.2rem; /* Smaller icons */
+    }
+}
+
+
+
+
+
+
+
+
+.newslettersec{
+    margin-top: 25px;
+    position: relative;
+}
+.newsltext{
+    color: black;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+.underline{
+    color: rgb(202, 78, 202);
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: 510px;
+}
+.let-font i{
+    font-size: 8rem;
+    margin-top: 45px;
+}
+.newslettersec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.newsl-detail .let-text .dis-head b,span {
+    color: black;
+    align-items: center;
+    margin-top: 7px;
+
+}
+.let-text p {
+    align-items: center;
+    margin-top: 7px;
+}
+.let-text a{
+    color: #9A4BFF;
+    text-decoration: none;
+    align-items: flex-start;
+}
+.let-input input{
+    /* margin-left: 85px; */
+    /* align-items: center; */
+    width: 25vw;
+    margin-top: 7px;
+    color: black;
+    padding: 5px;
+    margin-right: 1.5vw;
+}
+.let-input input::placeholder{
+    color: #9A4BFF;
+    padding: 20px;
+
+}
+.let-input button{
+    background-color: #9A4BFF; /* Purple background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 7px 20px; /* Padding for size */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease;
+}
+.let-input button:hover {
+    background-color: #7e3eff; /* Darker purple on hover */
+}
+.spacer{
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* border-collapse: collapse; */
+}
+.layer2{
+    background-image: url(images/curve2.svg);
+    position: relative;
+}
+.quick-links .connect1 .connect2 .legal h3,a{
+    padding: 0.5vh;
+    color: white;
+    text-decoration: none;
+}
+.quick-links  h3{
+    margin-bottom: 5vh;
+    font-size: 1.6rem;
+}
+.legal h3{
+    margin-bottom: 5vh;
+    font-size: 1.6rem;
+}
+.connect  h3{
+    margin-bottom: 5vh;
+    font-size: 1.6rem;
+    position: relative;
+}
+.consec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+.contactsec{
+
+    background-color: #9A4BFF;
+}
+.legal{
+    display: flex;
+    flex-direction: column;
+}
+.quick-links{
+    display: flex;
+    flex-direction: column;
+}
+.connect1 {
+    display: flex;
+    flex-direction: column;
+}
+.connect2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+.connect{
+    display: flex;
+    flex-direction: row;
+}
+.arroww a{
+    background-color: #b38eff;
+    font-size: 1.5rem;
+    width: 8vw;
+    height: 6vh;
+    align-items: center;
+    border-radius: 50px;
+    /* font-weight: 300; */
+}
+.quick-links a{
+    padding-top: 1vh;
+}
+.legal a{
+    padding-top: 1vh;
+}
+.footer{
+    background-color: rgb(16, 17, 63);
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    padding: 1vh 7vw;
+    
+}
